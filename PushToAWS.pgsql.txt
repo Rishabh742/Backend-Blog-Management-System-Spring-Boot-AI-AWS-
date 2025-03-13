@@ -1,0 +1,17 @@
+
+5. AWS Deployment
+
+   Deployment Steps
+
+    (2) Push to AWS ECR
+
+       aws ecr create-repository --repository-name blog-service
+
+       aws ecr get-login-password | docker login --username AWS --password-stdin 
+       <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com
+
+       docker tag blog-service:latest <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/blog-service
+
+       docker push <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/blog-service
+
+

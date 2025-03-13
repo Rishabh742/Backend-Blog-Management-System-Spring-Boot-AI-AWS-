@@ -1,0 +1,14 @@
+
+6. Bonus Features
+
+   JWT Authentication
+
+  Add Spring Security dependency in pom.xml:
+
+   <dependency>
+   
+	<groupId>io.jsonwebtoken</groupId>
+   	<artifactId>jjwt</artifactId>
+   	<version>0.11.2</version>
+ 
+   </dependency>
